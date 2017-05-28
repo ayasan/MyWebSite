@@ -1,0 +1,452 @@
+*{
+      margin:  0;
+      padding: 0;
+    　font-family: 'Barrio', cursive, "Nico Moji";
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    z-index: 10;
+}
+
+h1{
+    font-size: 80px; 
+    padding-left: 70px;
+    margin-bottom: 40px;
+    color: #555;
+    font-weight: 100;
+    font-family: 'Armata', sans-serif;
+}
+
+.animation1{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+#contents1 .animation1 .caption{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background: red;
+    height: 300px;
+    width: 300px;
+    
+    /*移動をスムーズにする*/
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    
+    /*↓透明にする*/
+    opacity: 0;
+}
+#contents1 .animation1:hover .caption{
+    /*右下に移動させる*/
+    -webkit-transform:translate(8px, 8px);
+    -ms-transform: translate(8px, 8px);
+    -o-transform:translate(8px, 8px);
+    transform:translate(8px,8px);
+    
+    /*透明だったものを表示させる*/
+    opacity: 1;
+}
+
+
+#contents1　.animation1 .caption h2{
+    color: white;
+    font-size: 13px;
+}
+
+#contents1　.animation1 .caption h3{
+    color: white;
+    font-size: 15px;
+}
+
+.animation2{
+    position: relative;
+    width: 300px;
+    float: left;
+    
+    -webkit-perspective: 500;
+    -moz-perspective: 500;
+    -ms-perspective: 500;
+    perspective: 500;
+    
+    -webkit-perspective-origin: left;
+    -moz-perspective-origin: left;
+    -ms-perspective-origin: left;
+    perspective-origin: left;
+}
+
+
+#contents2 .animation2 .caption{
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding: 20px;
+    background: #e63c35;
+    height: 185px;
+    width: 100px;
+    
+    /*透明にする*/
+    opacity: 0;
+    
+    -webkit-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    
+    -webkit-transition: transform 0.4s, opacity 0.1s 0.3s;
+    -o-transition: transform 0.4s, opacity 0.1s 0.3s;
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#contents2 .animation2 .caption h2{
+    color: white;
+    font-size: 13px;
+}
+
+#contents2 .animation2 .caption h3{
+    color: white;
+    font-size: 15px;
+}
+
+#contents2 .animation2:hover .caption{
+   /*透明だったものを表示させる*/
+    opacity: 1;
+    
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    
+    -webkit-transition: transform 0.4s, opacity 0.1s;
+    -o-transition: transform 0.4s, opacity 0.1s;
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+#contents2 .animation2:hover img{
+    -webkit-transform: translateX(25%);
+    -ms-transform: translateX(25%);
+    -o-transform: translateX(25%);
+    transform: translateX(25%);
+}
+
+#contents2 .animation2 img {
+    -webkit-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+    transition: transform 0.4s;
+}
+
+p.new{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e63c35;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+    float: right;
+}
+
+#wrappar{
+    width: 800px;
+    float: right;
+}
+.main-visual{
+    width: 100%;
+    height:  400px;
+    background: #fff url(hero.jpg) 0 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 32px;
+    padding-top: 60px;
+}
+
+p.new{
+     width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #e63c35;
+    color: white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 25px;
+    float: right;
+}
+
+
+figcaption{
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+#main{
+    float: left;
+    margin-left: 2 0px;
+    
+}
+
+#sidebar{
+    float: left;
+    width: 200px;
+    margin: 0px 30px;
+    background: #fff;
+    padding: 8px;
+}
+#sidebar img{
+    margin-bottom: 16px;
+}
+#sidebar h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#sidebar p{
+    font-size: 16px;
+}
+#sidebar1{
+    float: left;
+    width: 180px;
+    margin: 480px 20px;
+    background: #fff;
+    padding: 12px;
+}
+#sidebar1 img{
+    margin-bottom: 16px;
+}
+#sidebar1 h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#sidebar1 p{
+
+    font-size: 16px;
+}
+
+#header{
+    width: 100%;
+    overflow: hidden;
+    background: #F5F2F1;
+    padding: 6px 0px;
+    position: fixed;
+}
+
+#header h1{
+    float: left;
+    color: #555;
+    margin-right: 48px;
+}
+nav{
+    overflow: hidden;
+    z-index: 11;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li{
+    list-style-type: none;
+    float: left;
+    margin-top: 2px;
+}
+
+nav h1{
+    text-align: center;
+    font-size: 32px;
+    padding: 8px 16px;
+    color: #F5F2F1;
+    text-shadow: 1px 1px 1px #000;
+}
+nav a{
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: #F5F2F1;
+    margin: 14px 16px 0px;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    border-bottom: 4px solid #e63c35;
+}
+img{
+    float: left;
+}
+h2{
+    color: #001624;
+    font-size: 45px;
+}
+p{
+    margin-bottom: 60px;
+    font-size: 30px;
+}
+a{
+    margin-top: 15px;
+    font-size: 30px;
+    padding: 10px 25px;
+    background:  #fff9eb;
+    color: #555;
+    border: 3px solid #fff9eb;
+    border-radius: 0px;
+    text-decoration: none;
+    float: 
+}
+a.hover{
+    background: #f9f9f9;
+    color: #3B5998;
+}
+.content{
+    border-bottom: 1px solid #eee;
+    padding: 24px 0;
+    overflow: hidden;
+}
+.top-title{
+    font: 36x;
+    padding-left: 8px;
+    margin-bottom: 16px;
+    color: #555;
+    font-weight: 400;
+    border-left: 6px solid #e63c35;
+}
+.top-title1{
+    font: 32x;
+    padding-left: 8px;
+    margin-bottom: 16px;
+    color: #555;
+    font-weight: 400;
+    border-left: 6px solid #e63c35;
+    float: right;
+}
+.right-box{
+    float: left;
+    width: 288px;
+    margin-left: 18px;
+}
+.left-box{
+    float: left;
+    width: 288px;
+    margin-right: 18px;
+}
+.container{
+    width: 608px;
+    margin: 0 50;
+    overflow: hidden;
+    background: #fff;
+    padding: 16px;
+}
+body{
+    widows: 100%;
+    background: #FAFAF6;
+}
+.content:last-child{
+    border-bottom: 0;
+}
+h3{
+    color: #555;
+    font-size: 5px;
+}
+ol{
+     color: #555;
+    font-size: 30px;
+}
+a.botan{
+    margin: 60px 0px;
+    font-size: 30px;
+    padding: 0px 20px;
+    background: #f9f9f9;
+    color: #555;
+    border: 3px solid #555;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#main a.fbbutton{
+    font-size: 16px;
+    color: #3B5998;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 10px 30px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+#main a.fbbutton:active{
+    background-color: #3B5998;
+    color: #fff;
+}
+.fbbutton .edge{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none repeat scroll 0 0 #3B5998;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.fbbutton .edge1{
+    width:1px;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    -o-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    transition-delay: 0.2s;
+}
+.fbbutton .edge2{
+    height: 1px;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
+.fbbutton .edge3{
+    width: 1px;
+    left: auto;
+    right: 0;
+    -webkit-transform: translate3d(0. 100%, 0);
+    -ms-transform: translate3d(0. 100%, 0);
+    -o-transform: translate3d(0. 100%, 0);
+    transform: translate3d(0. 100%, 0);
+    transition-delay: 0.2s;
+}
+.fbbutton .edge4{
+    height: 1px;
+    top: auto;
+    bottom: 0;
+    -webkit-transform: translate3d(-100%, 0, 0); 
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
+a.fbbutton:hover .edge{
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+#a.ue{
+    margin: 3px 340px;
+    font-size: 25px;
+    padding: 40px 40px;
+    background: #fff9eb;
+    color: #555;
+    border: 1px solid #555;
+    border-radius: 100px;
+    text-decoration: none; 
+    float: left;
+}
